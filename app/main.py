@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from .routers import task
-from domain.store import store
+from shared.store import store
 
 store.load()
 

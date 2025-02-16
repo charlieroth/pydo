@@ -7,8 +7,8 @@
 This project is structured in three layers:
 
 - `app`: [fastapi](https://fastapi.tiangolo.com/) application serving an HTTP server as an API into the underlying task store
-- `cli`: [typer](https://typer.tiangolo.com/) application serving as a command line API into the underlying task store
-- `domain`: Shared modules which contain the domain logic regardless of the application entrypoint
+- `cli.py`: [typer](https://typer.tiangolo.com/) application serving as a command line API into the underlying task store
+- `shared`: Shared domain logic regardless of the application entrypoint
 
 ```
 .
@@ -20,11 +20,7 @@ This project is structured in three layers:
 │   ├── requests.py
 │   └── routers/
 │       └── ...
-├── cli/
-│   ├── commands.py/
-│   │   └── ...
-│   └── __init__.py
-└── domain/
+└── shared/
     ├── __init__.py
     ├── exceptions.py
     ├── models.py

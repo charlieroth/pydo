@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.responses import JSONResponse, Response
-from domain.store import Store
-from domain.models import Task
+from shared.store import Store
+from shared.models import Task
 from ..dependencies import get_store
-from domain.exceptions import TaskNotFoundException
+from shared.exceptions import TaskNotFoundException
 from ..requests import AddTaskRequest
 
 router = APIRouter(

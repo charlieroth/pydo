@@ -2,8 +2,8 @@ import typer
 from rich import print
 from rich.console import Console
 from rich.table import Table
-from domain.models import Task
-from domain.store import store
+from shared.models import Task
+from shared.store import store
 
 console = Console()
 app = typer.Typer()

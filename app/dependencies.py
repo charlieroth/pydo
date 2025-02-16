@@ -1,6 +1,6 @@
 from typing import Annotated
 from fastapi import Depends
-from domain.store import store, Store
+from shared.store import store, Store
 
 
 def get_store() -> Store:

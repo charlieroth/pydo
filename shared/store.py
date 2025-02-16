@@ -1,5 +1,5 @@
-from domain.models import Task
-from domain.exceptions import TaskNotFoundException
+from shared.models import Task
+from shared.exceptions import TaskNotFoundException
 from pydantic import BaseModel
 import json
 
