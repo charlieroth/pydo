@@ -1,0 +1,11 @@
+[project]
+name = "pydo"
+version = "0.1.0"
+description = "Python cli and server for managing todos"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.115.8",
+    "pydantic>=2.10.6",
+    "typer>=0.15.1",
+]
